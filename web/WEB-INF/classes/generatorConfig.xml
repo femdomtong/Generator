@@ -9,18 +9,18 @@
     	<property name="suppressAllComments" value="true"/>
     </commentGenerator>
     <!-- Mysql数据库连接的信息：驱动类、连接地址、用户名、密码 -->
-    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+    <!-- <jdbcConnection driverClass="com.mysql.jdbc.Driver"
         connectionURL="jdbc:mysql://localhost:3306/wutongdatabase"
         userId="root"
-        password="123456">
-    </jdbcConnection>
-    <!-- Oracle数据库
+        password="12345678">
+    </jdbcConnection> -->
+    <!-- Oracle数据库 -->
 	    <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
-	        connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg"
-	        userId="yycg"
-	        password="yycg">
+	        connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+	        userId="zhangsan"
+	        password="abc">
 	    </jdbcConnection> 
-    -->
+   
 	
 	<!-- 默认为false，把JDBC DECIMAL 和NUMERIC类型解析为Integer，为true时
 	把JDBC DECIMAL 和NUMERIC类型解析为java.math.BigDecimal -->
@@ -49,8 +49,8 @@
     </javaClientGenerator>
     
 	<!-- 指定数据表 -->
-	<table schema="" tableName="company"></table>
-	<!-- <table schema="" tableName="condiment"></table> -->
+	<table schema="" tableName="CAPITAL_AGGREGATE"></table>
+	<!-- <table schema="" tableName="Manufacturer"></table> -->
 	<!-- <table schema="" tableName=""></table>
 	<table schema="" tableName=""></table>
 	<table schema="" tableName=""></table>
